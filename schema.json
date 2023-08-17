@@ -1,0 +1,42 @@
+{  
+    "$schema": "https://json-schema.org/draft/2019-09/schema#",   
+    "type": "object",  
+    "title": "Software",  
+    "description": "Investment Banking",  
+    "additionalProperties": false,  
+    "required": ["companyName", "companyLocation", "companyStrength", "headOffice","Test1","Test2"],  
+    "properties": {  
+        "companyName": {  
+            "type": "string",  
+            "description": "Painting name"  
+        },  
+        "companyLocation": {   
+            "type": "string",  
+            "maxLength": 50,  
+            "description": "Name of the artist"  
+        },  
+        "companyStrength": {  
+            "type": ["number", "null"],  
+            "description": "employee count"  
+        }, 
+		"Test1": {  
+            "type": ["number", "null"],  
+            "description": "Painting description"  
+        }, 
+		"Test2": {  
+            "type": ["number", "null"],  
+            "description": "Painting description"  
+        }, 
+		
+        "headOffice": {  
+            "type": "array",  
+            "items": { "$ref": "#/$defs/tag" }  
+        }  
+    },  
+    "$defs": {  
+        "tag": {  
+            "type": "string",  
+            "enum": ["Pune", "Mumbai", "Nashik", "Banglore"]  
+        }  
+    }  
+}  

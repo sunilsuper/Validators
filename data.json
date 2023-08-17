@@ -1,0 +1,12 @@
+{  
+  "companyName": "Emma Watson",  
+  "companyLocation": "Paul Walker",  
+  "companyStrength": 13000,
+  "headOffice": ["Pune", "Banglore"], 
+  "Test1":10,
+  "Test2":"20",
+  "Test3":"30"
+  
+  
+}
+
